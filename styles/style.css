@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #faedcd;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3.2rem;
+}
+
+.titulo,
+.subtitulo {
+  font-family: "Shadows Into Light", cursive;
+  color: #403122;
+}
+
+.titulo {
+  font-size: 5.4rem;
+}
+
+.subtitulo {
+  font-size: 3.2rem;
+}
+
+.btn-adc {
+  display: block;
+  margin: 1.8rem auto 4.8rem auto;
+  padding: 0.8rem 1.6rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #403122;
+  background-color: #d4a373;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px #2a2117;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-adc:active {
+  background-color: #403122;
+  color: #d4a373;
+}
+
+.lista-tarefas {
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+  overflow: hidden;
+  max-width: 120rem;
+  box-shadow: 5px 5px 15px #2a2117;
+}
+
+.tarefa {
+  max-width: 120rem;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0.8rem 1.6rem;
+}
+
+.impar {
+  background-color: #e9edc9;
+}
+
+.par {
+  background-color: #ccd5ae;
+}
+
+.check {
+  padding: 0.5rem;
+}
+
+.descricao {
+  flex-grow: 1;
+  padding: 0 1.2rem;
+  font-size: 2.4rem;
+}
+
+.delete:hover {
+  cursor: pointer;
+  color: red;
+}
