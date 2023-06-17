@@ -44,6 +44,7 @@ function criarLista() {
     // Criando o span delete
     const span = document.createElement("span");
     span.classList.add("material-symbols-outlined", "delete");
+    span.setAttribute("id", `apagar-${index}`);
     span.innerText = "delete";
 
     // Colocando os childs na div tarefa
@@ -53,4 +54,18 @@ function criarLista() {
 
     listaDeTarefas.appendChild(tarefa);
   });
+  const apagar = document.querySelectorAll(".delete");
+
+  apagar.forEach((element) => {
+    element.addEventListener("click", function (event) {
+      const prepararApagar = event.target.id.split("");
+      paraApagar = +prepararApagar[prepararApagar.length - 1];
+      tarefas = tarefas
+        .slice(0, paraApagar)
+        .concat(tarefas.slice(paraApagar + 1));
+      criarLista();
+    });
+  });
 }
+
+function apagarTarefa() {}
