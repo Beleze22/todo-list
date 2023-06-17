@@ -29,32 +29,12 @@
         Desperte a sua melhor versão, abrace a organização e conquiste o mundo!
       </p>
     </header>
-    <button class="btn-adc">Adc Tarefa</button>
-    <div class="lista-tarefas">
-      <div class="tarefa impar">
-        <input class="check" type="checkbox" />
-        <p class="descricao">Descrição Tarefa</p>
-        <span class="material-symbols-outlined delete"> delete </span>
-      </div>
-      <div class="tarefa par">
-        <input class="check" type="checkbox" />
-        <p class="descricao">Descrição Tarefa</p>
-        <span class="material-symbols-outlined delete"> delete </span>
-      </div>
-      <div class="tarefa impar">
-        <input class="check" type="checkbox" />
-        <p class="descricao">Descrição Tarefa</p>
-        <span class="material-symbols-outlined delete"> delete </span>
-      </div>
-      <div class="tarefa par">
-        <input class="check" type="checkbox" />
-        <p class="descricao">Descrição Tarefa</p>
-        <span class="material-symbols-outlined delete"> delete </span>
-      </div>
-    </div>
-    <div class="adicao display-none">
+    <button class="btn-adc" id="btn-adicionar">Nova Tarefa</button>
+    <div class="lista-tarefas" id="lista-tarefas"></div>
+    <div class="adicao display-none" id="adicao">
       <input type="text" name="descricao" id="descricao" />
-      <button class="btn-adc" id="btn-adc">Adicionar</button>
+      <button class="btn-adc" id="btn-confirmar">Adicionar</button>
     </div>
+    <script src="script/index.js"></script>
   </body>
 </html>
