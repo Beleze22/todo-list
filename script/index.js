@@ -17,6 +17,7 @@ btnConfirmar.addEventListener("click", function () {
 function toggleAdicao() {
   adicao.classList.toggle("display-none");
   descricao.value = "";
+  descricao.focus();
 }
 
 function criarLista() {
@@ -67,5 +68,3 @@ function criarLista() {
     });
   });
 }
-
-function apagarTarefa() {}
