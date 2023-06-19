@@ -9,9 +9,30 @@ let tarefas = [];
 btnAdicionar.onclick = toggleAdicao;
 
 btnConfirmar.addEventListener("click", function () {
-  tarefas.push(descricao.value);
-  criarLista();
-  toggleAdicao();
+  if (descricao.value !== "") {
+    tarefas.push(descricao.value);
+    criarLista();
+    toggleAdicao();
+  }
+});
+
+document.addEventListener("keypress", function (event) {
+  switch (event.key) {
+    case "Enter":
+      if (adicao.classList.contains("display-none")) {
+        console.log("invisível");
+      } else {
+        if (descricao.value !== "") {
+          tarefas.push(descricao.value);
+          criarLista();
+          toggleAdicao();
+        }
+      }
+      break;
+
+    default:
+      break;
+  }
 });
 
 function toggleAdicao() {

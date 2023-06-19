@@ -1,0 +1,19 @@
+@media (max-width: 54em) {
+  .titulo {
+    font-size: 4.8rem;
+  }
+
+  .subtitulo {
+    font-size: 2.6rem;
+  }
+
+  .btn-adc {
+    margin: 1.2rem auto 0 auto;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+  }
+
+  .lista-tarefas {
+    margin: 3.6rem auto 0 auto;
+  }
+}
